@@ -1,0 +1,45 @@
+{
+  "name": "@js4y/lock-scroll",
+  "version": "1.0.0",
+  "description": "A set of methods to lock scrolling within an element or an entire page on mobile devices, tablets and desktops.",
+  "author": "David Bukacek <https://github.com/bukacekd>",
+  "license": "MIT",
+  "homepage": "https://github.com/bukacekd/lock-scroll#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bukacekd/lock-scroll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bukacekd/lock-scroll/issues"
+  },
+  "keywords": [
+    "andorid",
+    "body",
+    "desktop",
+    "ios",
+    "lock",
+    "mobile",
+    "modal",
+    "overflow",
+    "scroll",
+    "scrollbar",
+    "tablet",
+    "toggle"
+  ],
+  "files": [
+    "dist/",
+    "images/"
+  ],
+  "type": "module",
+  "main": "dist/index.mjs",
+  "jsdelivr": "dist/index.js",
+  "unpkg": "dist/index.js",
+  "scripts": {
+    "build:esm": "esbuild src/index.ts --outfile=dist/index.mjs --format=esm --minify",
+    "build:iife": "esbuild src/index.ts --outfile=dist/index.js --format=iife --minify --global-name=js4y.scrolling",
+    "build": "npm run build:esm && npm run build:iife"
+  },
+  "devDependencies": {
+    "esbuild": "^0.18.11"
+  }
+}
