@@ -38,9 +38,9 @@
     "build:library:esm": "esbuild src/index.ts --outfile=dist/index.mjs --format=esm --minify",
     "build:library:iife": "esbuild src/index.ts --outfile=dist/index.js --format=iife --minify --global-name=js4y.scrolling",
     "build": "npm run lint && npm run build:library:esm && npm run build:library:iife",
-    "docs": "vite build",
-    "docs:dev": "vite --open",
-    "docs:preview": "vite preview --open",
+    "docs": "vite build --config src-docs/vite.config.js",
+    "docs:dev": "vite --config src-docs/vite.config.js --open",
+    "docs:preview": "vite preview --config src-docs/vite.config.js --open",
     "lint": "eslint --ext .js,.ts src tests",
     "test": "vitest run",
     "test:dev": "vitest"
