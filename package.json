@@ -1,6 +1,6 @@
 {
   "name": "@js4y/lock-scroll",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A set of methods to lock scrolling within an element or an entire page on mobile devices, tablets and desktops.",
   "author": "David Bukacek <https://github.com/bukacekd>",
   "license": "MIT",
@@ -35,11 +35,24 @@
   "jsdelivr": "dist/index.js",
   "unpkg": "dist/index.js",
   "scripts": {
-    "build:esm": "esbuild src/index.ts --outfile=dist/index.mjs --format=esm --minify",
-    "build:iife": "esbuild src/index.ts --outfile=dist/index.js --format=iife --minify --global-name=js4y.scrolling",
-    "build": "npm run build:esm && npm run build:iife"
+    "build:library:esm": "esbuild src/index.ts --outfile=dist/index.mjs --format=esm --minify",
+    "build:library:iife": "esbuild src/index.ts --outfile=dist/index.js --format=iife --minify --global-name=js4y.scrolling",
+    "build": "npm run lint && npm run build:library:esm && npm run build:library:iife",
+    "docs": "vite build",
+    "docs:dev": "vite --open",
+    "docs:preview": "vite preview --open",
+    "lint": "eslint --ext .js,.ts src tests",
+    "test": "vitest run",
+    "test:dev": "vitest"
   },
   "devDependencies": {
-    "esbuild": "^0.18.11"
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "esbuild": "^0.19.0",
+    "eslint": "^8.46.0",
+    "happy-dom": "^10.9.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.1"
   }
 }
