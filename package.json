@@ -1,6 +1,6 @@
 {
   "name": "@js4y/lock-scroll",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A set of methods to lock scrolling within an element or an entire page on mobile devices, tablets and desktops.",
   "author": "David Bukacek <https://github.com/bukacekd>",
   "license": "MIT",
