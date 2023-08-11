@@ -93,3 +93,7 @@ unlockScroll(document.getElementById('scrollable-element'));
 ## License
 
 The project is licensed under [MIT license](https://opensource.org/license/mit/).
+
+## Related
+
+- [Dialog](https://github.com/bukacekd/Dialog) - A tiny dependency-free JavaSript ES6 library built on a dialog element with minimal configuration.
