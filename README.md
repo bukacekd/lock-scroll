@@ -3,7 +3,7 @@
 <p>
     <a href="https://www.npmjs.com/package/@js4y/lock-scroll"><img src="https://img.shields.io/badge/dependencies-none-green.svg" alt="none dependencies"></a>
     <a href="https://www.npmjs.com/package/@js4y/lock-scroll"><img src="https://img.shields.io/npm/v/%40js4y%2Flock-scroll" alt="npm"></a>
-    <a href="https://www.npmjs.com/package/@js4y/lock-scroll"><img src="https://img.shields.io/bundlephobia/minzip/%40js4y%2Flock-scroll" alt="npm bundle size"></a>
+    <a href="https://www.npmjs.com/package/@js4y/lock-scroll"><img src="https://deno.bundlejs.com/badge?q=@js4y/lock-scroll&treeshake=[*]" alt="npm bundle size"></a>
     <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/npm/l/%40js4y%2Flock-scroll" alt="license"></a>
 </p>
 
@@ -96,4 +96,6 @@ The project is licensed under [MIT license](https://opensource.org/license/mit/)
 
 ## Related
 
-- [Dialog](https://github.com/bukacekd/Dialog) - A tiny dependency-free JavaSript ES6 library built on a dialog element with minimal configuration.
+- [CountUp](https://github.com/bukacekd/count-up) - A tiny dependency-free JavaSript library for animating numeric values.
+- [Dialog](https://github.com/bukacekd/dialog) - A tiny dependency-free JavaSript ES6 library built on a dialog element with minimal configuration.
+- [Loader](https://github.com/bukacekd/loader) - A tiny dependency-free javascript loading spinner component with minimal configuration.
