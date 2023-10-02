@@ -18,7 +18,7 @@ const getTarget = (target?: HTMLElement) => {
 
 let scrolloptions: ScrollToOptions = {};
 
-export const lockScroll = async (target?: HTMLElement) => {
+export const lockScroll = (target?: HTMLElement) => {
 	const el = getTarget(target);
 
 	if (lockElements.has(el)) {

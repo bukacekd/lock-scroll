@@ -1,8 +1,12 @@
 {
+    "include": ["src/**/*"],
     "compilerOptions": {
+        "declaration": true,
+        "emitDeclarationOnly": true,
         "module": "esnext",
         "moduleResolution": "node",
         "noUnusedLocals": true,
+        "outDir": "dist",
         "strict": true,
         "skipLibCheck": true,
         "target": "esnext"

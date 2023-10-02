@@ -1,6 +1,6 @@
 {
   "name": "@js4y/lock-scroll",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A set of methods to lock scrolling within an element or an entire page on mobile devices, tablets and desktops.",
   "author": "David Bukacek <https://github.com/bukacekd>",
   "license": "MIT",
@@ -31,13 +31,12 @@
     "images/"
   ],
   "type": "module",
+  "types": "dist/index.d.ts",
   "main": "dist/index.mjs",
   "jsdelivr": "dist/index.js",
   "unpkg": "dist/index.js",
   "scripts": {
-    "build:library:esm": "esbuild src/index.ts --outfile=dist/index.mjs --format=esm --minify",
-    "build:library:iife": "esbuild src/index.ts --outfile=dist/index.js --format=iife --minify --global-name=js4y.scrolling",
-    "build": "npm run lint && npm run build:library:esm && npm run build:library:iife",
+    "build": "npm run lint && node esbuild.config.js && tsc",
     "docs": "vite build --config src-docs/vite.config.js",
     "docs:dev": "vite --config src-docs/vite.config.js --open",
     "docs:preview": "vite preview --config src-docs/vite.config.js --open",
