@@ -2,7 +2,7 @@ const lockElements = new WeakSet();
 
 const isBodyOrHTML = (target: HTMLElement) => target === document.body || target === document.documentElement;
 
-const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+const isIOS = /iPad|iPhone|iPod/.test(globalThis.navigator?.userAgent);
 
 const getTarget = (target?: HTMLElement) => {
 	if (target == undefined) {
@@ -40,6 +40,8 @@ export const unlockScroll = (target?: HTMLElement) => {
 	const el = getTarget(target);
 	el.style.cssText = '';
 
-	isIOS && isBodyOrHTML(el) && document.documentElement.scrollTo(scrolloptions);
+	if (isIOS && isBodyOrHTML(el)) {
+		document.documentElement.scrollTo(scrolloptions);
+	}
 	lockElements.delete(el);
 };
