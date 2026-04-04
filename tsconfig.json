@@ -4,9 +4,10 @@
         "declaration": true,
         "emitDeclarationOnly": true,
         "module": "esnext",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "noUnusedLocals": true,
         "outDir": "dist",
+        "rootDir": "./src",
         "strict": true,
         "skipLibCheck": true,
         "target": "esnext"

@@ -1,6 +1,6 @@
 {
   "name": "@js4y/lock-scroll",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A set of methods to lock scrolling within an element or an entire page on mobile devices, tablets and desktops.",
   "author": "David Bukacek <https://github.com/bukacekd>",
   "license": "MIT",
@@ -45,12 +45,12 @@
     "test:dev": "vitest"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "8.58.0",
-    "@typescript-eslint/parser": "8.58.0",
+    "@eslint/js": "10.0.1",
     "esbuild": "0.28.0",
     "eslint": "10.2.0",
     "happy-dom": "20.8.9",
     "typescript": "6.0.2",
+    "typescript-eslint": "8.58.0",
     "vite": "8.0.3",
     "vitest": "4.1.2"
   }
